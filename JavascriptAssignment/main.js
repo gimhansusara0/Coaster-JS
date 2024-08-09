@@ -22,15 +22,12 @@ const products = [
     {name: "Hot Choc", pricePerKg: 670},
     {name: "Malt Choc", pricePerKg: 670},
     {name: "Ice cream", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670},
-    {name: "Carrots", pricePerKg: 670}
+    {name: "Steak", pricePerKg: 670},
+    {name: "Sausages", pricePerKg: 670},
+    {name: "Fish", pricePerKg: 670},
+    {name: "Fishn", pricePerKg: 670},
+    {name: "Prawns", pricePerKg: 670},
+    {name: "Eggs", pricePerKg: 670}
 ];
 
 function addToCart(productIndex){
