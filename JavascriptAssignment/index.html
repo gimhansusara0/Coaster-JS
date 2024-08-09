@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <section class="main">
+        <section class="nav">
+            <h1>Coaster<span>.</span></h1>
+            <ul>
+                <a href="javascript:void(0);" onclick="showFruits()"><li><p>Fruits</p><img src="./Images/Icons/apple-fruit-icon.png" onclick="showFruits()" alt="Fruit-Icon"></li></a>
+                <a href="javascript:void(0);" onclick="showVeges()"><li><p>Veges</p><img src="./Images/Icons/carrot-vegetable-icon.png" onclick="showVeges()" alt="Vege-Icon"></li></a>
+                <a href="javascript:void(0);" onclick="showDairy()"><li><p>Dairy</p><img src="./Images/Icons/chocolate-icon.png" alt="Dairy-Icon"></li></a>
+                <a href="javascript:void(0);" onclick="showMeat()"><li><p>Meat</p><img src="./Images/Icons/chicken-leg-icon.png" alt="Meat-Icon"></li></a>
+                <a href="javascript:void(0);" onclick="showBaking()"><li><p>Baking</p><img src="./Images/Icons/cake-cup-icon.png" alt="Baking-Icon"></li></a>
+            </ul>
+            <p>©️2024, Coaster.</p>
+        </section>
+
+        <section class="container">
+            <!-- Fruits container -->
+            <section class="product-container" id="fruits">
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/fruits/avocado.jpg" alt="Avocado"></article>
+                    <article class="name">Avocado</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-0">Amount:</label>
+                        <input type="number" id="amount-0" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(0)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/fruits/banana.jpg" alt="Banana"></article>
+                    <article class="name">Banana</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-1">Amount:</label>
+                        <input type="number" id="amount-1" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(1)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/fruits/grapes.jpg" alt="Grapes"></article>
+                    <article class="name">Grapes</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-2">Amount:</label>
+                        <input type="number" id="amount-2" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(2)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/fruits/Orange.jpg" alt="Orange"></article>
+                    <article class="name">Orange</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-3">Amount:</label>
+                        <input type="number" id="amount-3" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(3)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/fruits/papaya.jpg" alt="Papaya"></article>
+                    <article class="name">Papaya</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-4">Amount:</label>
+                        <input type="number" id="amount-4" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(4)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+                
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/fruits/water-melon.jpg" alt="Water Melon"></article>
+                    <article class="name">Melon</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-5">Amount:</label>
+                        <input type="number" id="amount-5" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(5)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+            </section>
+
+            <!-- Vege Container -->
+            <section class="product-container" id="veges">
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Veges/carrots.jpg" alt="Carrots"></article>
+                    <article class="name">Carrots</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-6">Amount:</label>
+                        <input type="number" id="amount-6" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(6)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Veges/onions.jpg" alt="Onions"></article>
+                    <article class="name">Onions</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-7">Amount:</label>
+                        <input type="number" id="amount-7" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(7)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Veges/potatos.jpg" alt="Potatos"></article>
+                    <article class="name">Potatos</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-8">Amount:</label>
+                        <input type="number" id="amount-8" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(8)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Veges/pumpkins.jpg" alt="Pumpkins"></article>
+                    <article class="name">Pumpkins</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-9">Amount:</label>
+                        <input type="number" id="amount-9" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(9)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Veges/tomatos.jpg" alt="Tomatos"></article>
+                    <article class="name">Tomatos</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-10">Amount:</label>
+                        <input type="number" id="amount-10" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(10)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+                
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Veges/cabbage.jpg" alt="Cabbage"></article>
+                    <article class="name">Cabbage</article>
+                    <article class="price"><p>Rs.640(500g)</p></article>
+                    <article class="quantity">
+                        <label for="amount-11">Amount:</label>
+                        <input type="number" id="amount-11" step="0.1">
+                        <span>Kg</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(11)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+            </section>
+
+             <!-- Dairy Container -->
+             <section class="product-container" id="dairy">
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Dairy/bounty.jpg" alt="Bounty"></article>
+                    <article class="name">Bounty</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-12">Amount:</label>
+                        <input type="number" id="amount-12" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(12)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Dairy/choc-milk.jpg" alt="Choc Milk"></article>
+                    <article class="name">Choc Milk</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-13">Amount:</label>
+                        <input type="number" id="amount-13" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(13)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Dairy/creamoo.jpg" alt="Creamoo"></article>
+                    <article class="name">Creamoo</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-14">Amount:</label>
+                        <input type="number" id="amount-14" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(14)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Dairy/hot-choc.jpg" alt="Hot Choc"></article>
+                    <article class="name">Hot Choc</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-15">Amount:</label>
+                        <input type="number" id="amount-15" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(15)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Dairy/malt-choc.jpg" alt="Malt Choc"></article>
+                    <article class="name">Malt Choc</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-16">Amount:</label>
+                        <input type="number" id="amount-16" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(16)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+                
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Dairy/milk-ice-cream.jpg" alt="Milk Ice cream"></article>
+                    <article class="name">Ice cream</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-17">Amount:</label>
+                        <input type="number" id="amount-17" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(17)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+            </section>
+
+
+            <!-- Meat Container -->
+            <section class="product-container" id="meat">
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Meat/1-2.png" alt="Bounty"></article>
+                    <article class="name">Steak</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-18">Amount:</label>
+                        <input type="number" id="amount-18" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(18)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Meat/2-2.png" alt="Choc Milk"></article>
+                    <article class="name">Sausages</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-19">Amount:</label>
+                        <input type="number" id="amount-19" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(19)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Meat/3-2.png" alt="Creamoo"></article>
+                    <article class="name">Fish</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-20">Amount:</label>
+                        <input type="number" id="amount-20" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(20)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Meat/4-2.png" alt="Hot Choc"></article>
+                    <article class="name">Fish</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-21">Amount:</label>
+                        <input type="number" id="amount-21" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(21)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Meat/5.png" alt="Malt Choc"></article>
+                    <article class="name">Prawns</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-22">Amount:</label>
+                        <input type="number" id="amount-22" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(22)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+                
+                <!-- Product Card -->
+                <article class="card">
+                    <!-- Card Content -->
+                    <article class="img"><img src="./Images/Meat/eggs.png" alt="Milk Ice cream"></article>
+                    <article class="name">Eggs</article>
+                    <article class="price"><p>Rs.640</p></article>
+                    <article class="quantity">
+                        <label for="amount-23">Amount:</label>
+                        <input type="number" id="amount-23" step="0.1">
+                        <span>Qt</span>
+                    </article>
+                    <article class="add">
+                        <button onclick="addToCart(23)" class="cart-btn"><span class="material-symbols-outlined icon">
+                            add_shopping_cart
+                            </span></button>
+                    </article>
+
+                </article>
+
+            </section>
+
+        </section>
+
+        <!-- Table -->
+         <article class="table-backdrop" id="table-backdrop"></article>
+        <a href="javascript:void(0)" onclick="showTable()" class="table-btn">TABLE</a>
+        <section class="table" id="tab">
+           <table id="cart-table">
+               <thead>
+                   <tr>
+                       <th>Product</th>
+                       <th>Amount (kg)</th>
+                       <th>Price (Lkr)</th>
+                       <th>Total (Lkr)</th>
+                       <th>Remove</th>
+                   </tr>
+               </thead>
+               <tbody>
+               </tbody>
+           </table>
+           <article class="link-bar">
+            <button onclick="addToFavourites()">Add to favourites</button>
+            <button onclick="applyFavourites()">Apply favourites</button>
+            <button onclick="showCart()">Cart items</button>
+            <a href="./billing.html" style="padding: 10px; text-decoration: none; color: #fff; background-color: #e60536; border-radius: 50px;">Purchase</a>
+           </article>
+        </section>
+
+    </section>
+
+
+
+<script src="./animation.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
